@@ -24,7 +24,7 @@ def input_section(n_inputs):
     columns = st.columns(n_inputs)
     for i in range(n_inputs):
         with columns[i]:
-            st.markdown(f"w<sub>{i}</sub>", unsafe_allow_html=True)
+            st.markdown(f"x<sub>{i}</sub>", unsafe_allow_html=True)
             inputs.append(round(st.number_input(f"x{i}", step=0.01, label_visibility="collapsed"), 2))
     st.text(f"x = {inputs}")
     return inputs
