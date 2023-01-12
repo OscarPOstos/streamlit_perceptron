@@ -7,6 +7,8 @@ neuron = Neuron(weights=[0.0], bias=0, func="sigmoid")
 
 image = Image.open('static/images/logo.jpg')
 
+st.set_page_config(layout="wide")
+
 st.image(image)
 
 st.title("Simulador de neurona")
