@@ -40,7 +40,7 @@ class Neuron:
         self.bias = bias
 
     def change_weights(self, weights):
-        self.__check_func(weights)
+        self.__check_weights(weights)
         self.weights = weights
 
     def change_func(self, func):

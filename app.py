@@ -13,7 +13,7 @@ st.image(image)
 
 st.title("Simulador de neurona")
 
-n_wx = st.slider('Elige el número de entradas/pesos que tendrá la neurona', 0, 10, 1)
+n_wx = st.slider('Elige el número de entradas/pesos que tendrá la neurona', 1, 10, 1)
 
 weights_section(n_wx, neuron)
 
