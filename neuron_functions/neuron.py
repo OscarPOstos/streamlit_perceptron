@@ -34,8 +34,7 @@ class Neuron:
             raise Exception("Esa funcion de activacion no existe. Los que hay son ('relu', 'tanh', 'sigmoid')")
 
     def __neuronal_network(self, x):
-        print("prueba")
-        return np.dot(self.weights, x) + self.bias
+        return 0
 
     def change_bias(self, bias):
         self.bias = bias
@@ -51,7 +50,6 @@ class Neuron:
     def run(self, input_data):
         if np.size(input_data) == np.size(self.weights):
             result = self.__neuronal_network(input_data)
-            print("prueba2")
             return Neuron.activation[self.func](result)
         else:
             raise Exception("La longitud de w y x no son iguales")
