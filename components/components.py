@@ -41,4 +41,4 @@ def func_section(neuron):
     st.subheader("Función de activación")
     func = st.selectbox("Elige la función de activación",
                         ("Sigmoide", "ReLU", "Tangente hiperbólica"))
-    neuron.change_bias(functions[func])
+    neuron.change_func(functions[func])
