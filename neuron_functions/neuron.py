@@ -34,8 +34,9 @@ class Neuron:
             raise Exception("Esa funcion de activacion no existe. Los que hay son ('relu', 'tanh', 'sigmoid')")
 
     def __neuronal_network(self, x):
-        return np.dot(np.array(self.weights).astype('float64'),
-                      np.array(x).astype('float64')) + self.bias
+        product = np.dot(np.array(self.weights).astype('float64'),
+                      np.array(x).astype('float64'))
+        return product + self.bias
 
     def change_bias(self, bias):
         self.bias = bias
