@@ -1,7 +1,7 @@
 
 def testcss():
     return """
-        input[type="number"] {
+        input {
             height: 100px;
         }
     """
