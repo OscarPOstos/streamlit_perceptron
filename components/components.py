@@ -15,7 +15,7 @@ def weights_section(n_weights, neuron):
             weights.append(st.number_input(f"w{i}", step=0.01))
     st.text(f"w = {weights}")
     neuron.change_weights(weights)
-    print(neuron.weights)
+    st.text(f"{neuron.weights}")
 
 def show_components_tab1():
     st.subheader("Una neurona con una entrada y un peso")
