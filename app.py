@@ -17,14 +17,9 @@ n_wx = st.slider('Elige el número de entradas/pesos que tendrá la neurona', 1,
 
 weights_section(n_wx, neuron)
 
-tab1, tab2, tab3 = st.tabs(["Una entrada", "Dos entradas", "Tres entradas y sesgo"])
+inputs = input_section(n_wx, neuron)
 
-with tab1:
-    show_components_tab1()
-
-with tab2:
-    show_components_tab2()
-
-with tab3:
-    show_components_tab3()
+submit = st.button("Calcular la salida")
+if submit:
+    st.text(neuron.run(inputs))
     
