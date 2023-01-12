@@ -2,12 +2,15 @@ import streamlit as st
 from components.components import *
 from PIL import Image
 from neuron_functions.neuron import Neuron
+from static.style.style import testcss
 
 neuron = Neuron(weights=[0.0], bias=0, func="sigmoid")
 
 image = Image.open('static/images/logo.jpg')
 
 st.set_page_config(layout="wide")
+
+st.markdown(f"<style>{testcss()}</style>", unsafe_allow_html=True)
 
 st.image(image)
 
