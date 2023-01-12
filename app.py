@@ -12,7 +12,9 @@ st.set_page_config(layout="wide")
 
 st.text(testcss())
 
-st.markdown(f"<style>{testcss()}</style>", unsafe_allow_html=True)
+st.markdown(f"""<style>
+            {testcss()}
+            </style>""", unsafe_allow_html=True)
 
 st.image(image)
 
