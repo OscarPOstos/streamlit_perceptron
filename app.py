@@ -10,8 +10,6 @@ image = Image.open('static/images/logo.jpg')
 
 st.set_page_config(layout="wide")
 
-st.text(testcss())
-
 st.markdown(f"""<style>
             {testcss()}
             </style>""", unsafe_allow_html=True)
