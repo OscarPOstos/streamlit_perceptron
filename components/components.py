@@ -6,17 +6,16 @@ sys.path.insert(0, 'neuron_functions')
 
 from neuron_functions.neuron import Neuron
 
-
 def weights_section(n_weights, neuron):
     st.subheader("pesos")
     weights = []
-    with st.container():
-        for i in range(n_weights):
+    columns = st.columns(n_weights)
+    for i in range(n_weights):
+        with columns[i]:
             weights.append(st.number_input(f"w{i}", step=0.01))
     st.text(f"w = {weights}")
     neuron.change_weights(weights)
     print(neuron.weights)
-
 
 def show_components_tab1():
     st.subheader("Una neurona con una entrada y un peso")
