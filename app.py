@@ -29,5 +29,5 @@ with col2:
 
 submit = st.button("Calcular la salida")
 if submit:
-    st.text(neuron.run(inputs))
+    st.text(f"{neuron.run(inputs)}")
     
