@@ -19,6 +19,10 @@ weights_section(n_wx, neuron)
 
 inputs = input_section(n_wx)
 
+bias_section(neuron)
+
+func_section(neuron)
+
 submit = st.button("Calcular la salida")
 if submit:
     st.text(neuron.run(inputs))
