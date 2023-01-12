@@ -13,7 +13,7 @@ def weights_section(n_weights, neuron):
     for i in range(n_weights):
         with columns[i]:
             st.markdown(f"w<sub>{i}</sub>")
-            weights.append(round(st.number_input(step=0.01, label_visibility="hidden"), 2))
+            weights.append(round(st.number_input("", step=0.01, label_visibility="collapse"), 2))
     st.text(f"w = {weights}")
     neuron.change_weights(weights)
 
