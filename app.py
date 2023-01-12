@@ -17,7 +17,7 @@ n_wx = st.slider('Elige el número de entradas/pesos que tendrá la neurona', 1,
 
 weights_section(n_wx, neuron)
 
-inputs = input_section(n_wx, neuron)
+inputs = input_section(n_wx)
 
 submit = st.button("Calcular la salida")
 if submit:

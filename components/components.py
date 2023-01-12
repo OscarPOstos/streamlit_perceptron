@@ -3,7 +3,6 @@ import streamlit as st
 import sys
 
 sys.path.insert(0, 'neuron_functions')
-
 from neuron_functions.neuron import Neuron
 
 
@@ -18,7 +17,7 @@ def weights_section(n_weights, neuron):
     neuron.change_weights(weights)
 
 
-def input_section(n_inputs, neuron):
+def input_section(n_inputs):
     st.subheader("Entradas")
     inputs = []
     columns = st.columns(n_inputs)
@@ -43,4 +42,3 @@ def func_section(neuron):
     func = st.selectbox("Elige la función de activación",
                         ("Sigmoide", "ReLU", "Tangente hiperbólica"))
     neuron.change_bias(functions[func])
-
