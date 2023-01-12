@@ -1,0 +1,26 @@
+import streamlit as st
+from components.components import *
+from PIL import Image
+from neuron_functions.neuron import Neuron
+
+image = Image.open('static/images/logo.jpg')
+
+st.image(image)
+
+st.title("Simulador de neurona")
+
+n_neurons = st.slider('Elige el número de entradas/pesos que tendrá la neurona', 0, 10, 1)
+
+st.subheader("pesos")
+
+tab1, tab2, tab3 = st.tabs(["Una entrada", "Dos entradas", "Tres entradas y sesgo"])
+
+with tab1:
+    show_components_tab1()
+
+with tab2:
+    show_components_tab2()
+
+with tab3:
+    show_components_tab3()
+    
