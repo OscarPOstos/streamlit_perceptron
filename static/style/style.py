@@ -1,7 +1,7 @@
 
 def testcss():
     return """
-        body {
-            background-color: red;
+        input[type="number"] {
+            height: 100px;
         }
     """
