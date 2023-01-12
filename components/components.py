@@ -1,6 +1,11 @@
 import streamlit as st
 
+import sys
+
+sys.path.insert(0, 'neuron_functions')
+
 from neuron_functions.neuron import Neuron
+
 
 
 def weights_section(n_weights, neuron):
