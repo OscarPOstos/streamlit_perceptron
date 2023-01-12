@@ -50,7 +50,6 @@ class Neuron:
     def run(self, input_data):
         if np.size(input_data) == np.size(self.weights):
             result = self.__neuronal_network(input_data)
-            #return Neuron.activation[self.func](result)
-            return result
+            return Neuron.activation[self.func](result)
         else:
             raise Exception("La longitud de w y x no son iguales")
