@@ -25,7 +25,7 @@ with col1:
     bias_section(neuron)
 
 with col2:
-func_section(neuron)
+    func_section(neuron)
 
 submit = st.button("Calcular la salida")
 if submit:
